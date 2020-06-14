@@ -1,0 +1,323 @@
+  body,html{
+    height: 100%;
+    max-width: 100%;
+    background: url("NonTechBG.png");
+    background-size: 100% 100%;
+    background-position:auto;
+    background-repeat: no-repeat;
+  font-family:hal;
+}
+#con{
+    display:none;
+}
+
+@font-face{
+  font-family:now;
+  src:url("Now-Medium.otf") format("truetype");
+}
+nav{
+    position: absolute;
+    width: 100%;
+    font-family: american-captain;
+}
+
+.mobtechcont{
+ display:none;
+}
+.mobmobtechRow{
+ display:flex;
+ margin:auto;
+}
+.win{
+ height:150px;
+ width: 170px;
+ margin:auto;
+ margin-bottom: 100px;
+}
+
+.techcont{
+ width: 75%;
+ height:90%;
+ position: absolute;
+ top:10%;
+ display: flex;
+ flex-direction:column;
+}
+.techRow{
+ /*border:1px solid black;*/
+ display:flex;
+ justify-content:space-around;
+ padding-bottom: 4%;
+ flex-wrap:wrap;
+}
+.check{
+ width:75%;
+ margin-left:17%;
+ 
+}
+.techimg {
+ height:150px;
+ width: 120px;
+ /*border:1px solid red;*/
+}
+.techimg:hover{
+    animation:tilt 1s linear 1 alternate;
+}
+@keyframes tilt{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.Techpic{
+ height: 100%;
+ width: 100%;
+}
+/*.container*/
+/*{*/
+/*    height:500px;*/
+/*    width:100%;*/
+/*    display:flex;*/
+/*    justify-content: center;*/
+/*    position:absolute;*/
+/*    top:0;*/
+/*    left:3%;*/
+
+/*}*/
+/*.inner*/
+/*{*/
+/*    height:500px;*/
+/*    width:40%;*/
+/*    display:flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+    /*border:1px solid black;*/
+
+/*}*/
+/*.frame*/
+/*{*/
+/*    height:25%;*/
+/*    width:40%;*/
+    /*border:1px solid black;*/
+/*}*/
+/*.inner1*/
+/*{*/
+/*    justify-content: space-around;*/
+/*}*/
+/*.inner2*/
+/*{*/
+/*    margin-top: 0.5%;*/
+/*    justify-content: space-between;*/
+
+/*}*/
+/*.inner1 .selected*/
+/*{*/
+/*    align-self: flex-start;*/
+/*}*/
+/*.inner3*/
+/*{*/
+/* justify-content:space-around;*/
+/*}*/
+/*.inner3 > .left{*/
+/* align-self:flex-start;*/
+/*}*/
+/*.inner1 .down1*/
+/*{*/
+/*    align-self: ;*/
+/*}*/
+
+/*.frame >  a img*/
+/*{*/
+/*    width:100%;*/
+/*    height:100%;*/
+/*}*/
+
+ .modal-container {
+     position: fixed;
+     left: 50%;
+     top:-50px;
+     transform: translate(-50%, -200%);
+     background: #FFF;
+      border-radius: 5px;
+     width: 60%;
+     height: 70%;
+     transition: transform 200ms ease-out;
+     font-family:now;
+}
+ .modal-container .modal-header {
+     position: relative;
+     top: -20px;
+     background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+     padding: 10px 0;
+     border-radius: 5px;
+     text-align: center;
+     font-size: 24px;
+     color: #FFF;
+     margin: 0 20px;
+}
+ .modal-heading{
+     position: absolute;
+     left: 50%;
+     top: 39%;
+     transform: translate(-50%,-50%);
+     text-decoration: none;
+     color:#FFF;
+     font-weight:600;
+     letter-spacing:1px;
+}
+ .modal-container p {
+     font-size: 18px;
+     margin: 0;
+     text-align: justify;
+     height: max-content;;
+}
+ .modal:before {
+     content: "";
+     position: fixed;
+     display: none;
+     left: 0;
+     top: -0;
+     height: 100%;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.6);
+}
+ .modal:target:before {
+     display: block;
+}
+ .modal:target .modal-container {
+     transform: translate(-50%, -50%);
+     top:50%;
+}
+ .modal-container .close {
+     top: -20px;
+     position: absolute;
+     right: 30px;
+     text-decoration: none;
+     color: #FFF;
+     background: #D5573F;
+     border-radius: 50px;
+     /*border:1px solid white;*/
+     box-shadow: 1px 1px #DC7E68;
+     height: 20px;
+     width: 20px;
+     text-align: center;
+     line-height: 15px;
+}
+h2{
+  letter-spacing: 1px;
+    color: #7983f8;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-align-last: center;
+  margin-top:50px;
+}
+ 
+
+ #body-scroll::-webkit-scrollbar{
+    width: 10px;
+     background-color: #F5F5F5;
+     height: 400px;
+}
+ #body-scroll::-webkit-scrollbar-thumb{
+     border-radius: 10px;
+   
+     background-color: #FFF;
+    background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+ .modal-body{
+    padding: 20px;
+     padding-top: 0;
+     height: 400px;
+}
+  .scrollbar{
+    height: inherit;
+     overflow-y: auto;
+     scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width:720px)and (orientation:portrait){
+body,html{
+    height: 100%;
+    max-width: 100%;
+    background: url("MobileTEvents.png");
+    background-size: 100% 100%;
+    background-position:auto;
+    background-repeat: no-repeat;
+} 
+.techcont{
+ display:none;
+}
+.mobtechcont{
+ display:block;
+   background: url("Techbase.png");
+    background-size: 100% 100%;
+    background-position:auto;
+    background-repeat: repeat;
+}
+ .techimg{
+  margin:auto;
+ }
+ .scrollbar{
+  height:inherit;
+ }
+ .modal-container {
+  height:70% ;
+  top:-40px;
+  width: 300px;
+  font-family:now;
+ }
+}
+@media screen and (max-width:720px)and (orientation:landscape){
+body,html{
+    height: 1000px;
+    max-width: 100%;
+    background: url("MobileTEvents.png");
+    background-size: 100% 100%;
+    background-position:auto;
+    background-repeat: no-repeat;
+} 
+.techcont{
+ display:none;
+}
+.mobtechcont{
+ display:block;
+   background: url("Techbase.png");
+    background-size: 100% 100%;
+    background-position:auto;
+    background-repeat: repeat;
+}
+ .techimg{
+  margin:auto;
+ }
+  .modal-container{
+   width:70%;
+   height:300px !important;
+   margin:auto;
+   position:fixed;
+   left:50%;
+   top:700px;
+  }
+  .scrollbar{
+  height:inherit;
+ }
+}

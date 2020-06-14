@@ -1,0 +1,198 @@
+body,html{
+    height: 100%;
+    max-width: 100%;
+    background: url("EventsPics/EventsBG.png");
+    background-size: 100% 100%;
+    background-position:auto;
+    background-repeat: no-repeat;
+  font-family:american-captain;
+}
+#con{
+    display:none;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+}
+.eventsCont{
+    position:fixed;
+    bottom:8%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid pink;     */
+}
+
+.Etech{
+    margin-top: -200px;
+    margin-left:20%;
+    height: 260px;
+    width: 340px;
+}
+.zoomtech{
+    animation : zoom 2s linear;
+}
+.zoomtechmob{
+    animation : Mobzoom 2s linear;
+}
+.techmobzoom{
+    animation : zoomtech 2s linear;
+}
+@keyframes zoom{
+    0%{
+        transform:scale(1.1);
+        transform-origin: bottom left 60px;
+    }
+    25%{
+        transform:scale(1.3);
+        transform-origin: bottom left 60px;
+    }
+    50%{
+       transform: scale(1.5);
+       transform-origin: bottom left 60px;
+    }
+    75%{
+        transform:scale(1.7);
+        transform-origin: bottom left 60px;
+    }
+    100%{
+        transform:scale(1.9);
+        transform-origin: bottom left 60px;
+    }
+}
+@keyframes zoomtech{
+    0%{
+        transform:scale(1.1);
+        transform-origin: bottom center 60px;
+    }
+    25%{
+        transform:scale(1.3);
+        transform-origin: bottom center 60px;
+    }
+    50%{
+       transform: scale(1.5);
+       transform-origin: bottom center 60px;
+    }
+    75%{
+        transform:scale(1.7);
+        transform-origin: bottom center 60px;
+    }
+    100%{
+        transform:scale(1.9);
+        transform-origin: bottom center 60px;
+    }
+}
+
+@keyframes Mobzoom{
+    0%{
+        transform:scale(1.1);
+    }
+    25%{
+        transform:scale(1.3);
+    }
+    50%{
+       transform: scale(1.5);
+    }
+    75%{
+        transform:scale(1.7);
+    }
+    100%{
+        transform:scale(1.9);
+    }
+}
+
+.ETimg{
+    height: 260px;
+    width: 340px;
+}
+.ENtech{
+    margin-left:62%;
+    height: 200px;
+    width:250px;
+}
+.ENTimg{
+    height: 200px;
+    width:250px;
+}
+
+
+
+.mount{
+    margin-top:-4%;
+    width: 99.7%;
+    height: 100px;
+    /* border: 2px solid blue;    */
+}
+.Emnt{
+    width: 100%;
+    height: 150px;
+}
+
+.Ediv:hover{
+    cursor:pointer;
+    transform: translate(20px, -10px)  scale(1.1);
+    transition:transform 0.3s linear;
+}
+
+@media screen and (max-width:620px){
+    .Etech{
+        margin-left:0px;
+    }
+    .Ediv{
+        margin:auto;
+    }
+}
+
+@media screen and ( max-width : 620px){
+     body,html{
+         max-height: 100%;
+         max-width: 100%;
+         background: url("MobileEventsBG.png");
+         background-size:100% 100%;
+         background-position:auto;
+         background-repeat: no-repeat;
+    }
+    .nav{
+        z-index:2;
+    }
+    .eventsCont{
+        position:relative;
+        top:30%;
+        background:#D96F58;
+    }
+    .Etech{
+    margin-top: -60px;
+    height: 260px;
+    width: 340px;
+}
+.mount{
+    margin-top:-50px;
+    width: 99.7%;
+    height: 100px;
+    /* border: 2px solid blue;    */
+}
+.modal-container{
+   width:90%;
+   height:70% !important;
+   margin:auto;
+  }
+}
+@media screen and ( max-width : 1020px) and (orientation:landscape){
+    .eventsCont{
+        position:relative;
+        top:50%;
+        background:#D96F58;
+    }
+    .mount{
+    margin-top:-70px;
+    width: 99.7%;
+    height: 100px;
+    /* border: 2px solid blue;    */
+}
+.Etech{
+    margin-top: -85px;
+    height: 260px;
+    width: 320px;
+}
+}

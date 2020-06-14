@@ -1,0 +1,111 @@
+.footer
+		{
+			width:99%;
+			height:6%;
+			/*border:1px solid black;*/
+			/*background:grey;*/
+			display:flex;
+			position:fixed;
+			bottom:0%;
+			justify-content: flex-end;
+			padding:6px;
+			color: #FFE8C0;
+		}
+		.f:hover
+		{
+			color:white;
+
+		}
+		.icons
+		{
+		  font-size: 26px;
+			/*border:1px solid black;*/
+			width: 10%;
+			display:flex;
+			justify-content: space-around;
+		}
+		
+		
+		/*===================popup===================*/
+		
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin-top:30%;
+  margin-left:69%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  font-family:hal;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #D5573F;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color:#D5573F;
+}
+.popup .content {
+  max-height: 30%;
+  line-height: 1.6;
+}
+.call{
+	text-decoration: none;
+	color:#FFE8C0;
+}
+
+@media screen and (max-width : 620px) and (orientation:portrait){
+  .icons{
+    width:40%;
+  }
+  .popup {
+    width:70%;
+    left:-40%;
+    top:50%;
+  }
+  .footer{
+    right:0.5%;
+  }
+}
+@media screen and (max-width : 920px) and (orientation:landscape){
+  .footer{
+    right:5%;
+    bottom: 5%;
+  }
+  .icons{
+    width:20%;
+  }
+  .popup {
+    width:60%;
+    left:-30%;
+    top:-20%;
+  }
+}
